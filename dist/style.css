@@ -1,0 +1,11 @@
+#content {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    justify-items: center;
+
+}
+.osvaldo {
+    width: 500px;
+    height: 200px;
+    
+}

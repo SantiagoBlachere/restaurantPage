@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const t=document.querySelector("#content"),e=document.createElement("h1");e.innerText="PANCHOS OSVALDO";const n=document.createElement("img");n.setAttribute("src","https://i.ytimg.com/vi/BFtmGCTjfRM/maxresdefault.jpg"),n.classList.add("osvaldo"),t.appendChild(e),t.appendChild(n)}()})();
