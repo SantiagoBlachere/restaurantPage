@@ -1,11 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 #content {
+    height: 1000px;
     display: grid;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 10fr;
     justify-items: center;
+    gap: 20px;
 
 }
 .osvaldo {
     width: 500px;
     height: 200px;
     
+}
+.navBar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.home {
+    display: grid;
+    justify-items: center;
+    width: 80%;
+    grid-template-rows: 20px, 1fr, 20px, 1fr;
+    height: 400px;
+    gap: 5px;
+    
+}
+.home>h3{
+    height: 50px;
+    margin-top: 20px;
+}
+.schedule {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
