@@ -2,7 +2,18 @@
     padding: 0;
     margin: 0;
 }
-
+@font-face {
+    font-family: greek;
+    src: url('../src/AmerikaPro.ttf');
+}
+body {
+    background-color: #ffe381;
+    color: #2d683f;
+    font-family: greek;
+}
+h1 {
+    padding-top: 50px;
+}
 #content {
     height: 1000px;
     display: grid;
@@ -21,6 +32,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+button {
+    height: 50%;
+    background-color: #2d683f;
+    border-style: none;
+    border: none;
+    color: #ffe381;
+}
+button:hover{
+    color: #e38c34
+}
 .home {
     display: grid;
     justify-items: center;
@@ -35,7 +56,7 @@
     margin-top: 20px;
 }
 .schedule {
-    width: 500px;
+    width: 550px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

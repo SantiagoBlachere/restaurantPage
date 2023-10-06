@@ -1,3 +1,4 @@
+import contact from "./contact";
 import home from "./home";
 import menu from "./menu";
 export default function component() {
@@ -31,6 +32,10 @@ export default function component() {
 
     const contactBtn = document.createElement('button');
     contactBtn.innerText = 'CONTACT';
+    contactBtn.onclick = () => {
+        clearContent();
+        contact();
+    }
 
 
     rootDiv.appendChild(navBar);
@@ -41,12 +46,16 @@ export default function component() {
 
     const clearContent = () => {
         const homeContainer = document.querySelector('.home');
-        const menuContainer = document.querySelector('.menu')
+        const menuContainer = document.querySelector('.menu');
+        const contactContainer = document.querySelector('.contact')
         if (homeContainer) {
             homeContainer.remove();
         }
         if (menuContainer) {
             menuContainer.remove();
+        }
+        if (contactContainer) {
+            contactContainer.remove();
         }
     }
     }
